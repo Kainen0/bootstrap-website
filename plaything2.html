@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+        <title>Plaything 2</title>
+        <style>
+body{
+    height:2500px;
+    background-color:#383838;
+}
+
+.container{
+    margin-top:75px;
+}
+.navbar-brand{
+    font-weight:bold;
+}
+.navbar{
+    background-color:#232323;
+}
+.navbar-nav{
+    width:100%;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" id="">
+                <div class="container-fluid">
+                    <div class="navbar-header navbar-inverse">
+                    <a class="navbar-brand" href="#">Digital Playground Content</a>
+                </div>
+                    <ul class="nav navbar-nav navbar-inverse">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="plaything1.html">Plaything 1</a></li>
+                        <li><a href="plaything2.html">Plaything 2</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Info</a></li>
+                    </ul>
+                </div>
+            </nav>
+<h1>Secret Code...</h1>
+<h3><pre>i have hidden a secret code somewhere in this website, if you can find it, enter it into
+the place below</pre></h3>
+        <label for="pswd" class="secret-code" id="code">Enter Secret Code: </label>
+<input type="password" id="pswd">
+<input type="button" value="Submit" onclick="checkPswd();" />
+</form> 
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "20080521";
+        
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="secret.html";
+        }
+        else{
+            alert("wrong code.");
+        }
+    }
+</script>
+
+    </body>
+</html>

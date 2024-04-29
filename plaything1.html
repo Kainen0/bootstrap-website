@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        html,body
+        {
+         height:95%;
+         background-color:#383838;
+        }
+            #franken-div{
+                height:50px;
+                width:50px;
+                background-color:white;
+                margin-top:1%;
+            }
+            button
+            {
+                margin:5px;
+                padding:10px;
+                font-size:15px;
+                font-family: creepster, sans-serif;
+            }
+            .container
+            {  
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+
+.#1{
+    margin-top:2px;
+}
+.navbar-brand{
+    font-weight:bold;
+}
+.navbar{
+    background-color:#232323;
+}
+.navbar-nav{
+    width:100%;
+}
+#3{
+    align-items:center;
+}
+  </style>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+        <script
+          src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"
+          integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE="
+          crossorigin="anonymous">//Allows for color animation!</script>
+        <script src='https://use.edgefonts.net/creepster.js'>//Allows for the spooky font!</script>
+        <title>Plaything 1</title>
+    </head>
+
+    <body>
+        <h1>Bob The Cube</h1>
+        <nav class="navbar navbar-default navbar-fixed-top" id="">
+                <div class="container-fluid">
+                    <div class="navbar-header navbar-inverse">
+                    <a class="navbar-brand" href="#">Digital Playground Content</a>
+                </div>
+                    <ul class="nav navbar-nav navbar-inverse">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="plaything1.html">Plaything 1</a></li>
+                        <li><a href="plaything2.html">Plaything 2</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Info</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <div id="1" class = container>
+	        <button id = square>Square</button>
+    	    <button id = circle>Circle</button>
+    	    <button id = rect>Rectangle</button>
+    	    <button id = size>Change Size</button>
+    	    <button id = color>Change Color</button>
+    	    <button id = reset>Reset</button>
+    	</div>
+    	<div class="container" id="3">
+            <div id = franken-div></div>
+        </div>
+        <script>
+             $("#size").click(function(){
+                $("#franken-div").animate({height: "150px", width: "150px"}, "slow");
+            })
+            $("#rect").click(function(){
+                $("#franken-div").animate({border: "150px", width: "100px"}, "slow");
+            })
+            $("#circle").click(function(){
+                $("#franken-div").animate({borderRadius: "300px"}, "slow");
+            })
+            $("#square").click(function(){
+                $("#franken-div").animate({borderRadius: "0px", height: "50px", width: "50px"}, "slow");
+            })
+            $("#color").click(function(){
+                $("#franken-div").animate({backgroundColor: "red"}, "slow");
+            })
+            $("#reset").click(function(){
+                $("#franken-div").animate({backgroundColor: "white", borderRadius: "0px", height: "50px", width: "50px" }, "slow");
+            })
+            </script>
+    </body>
+</html>
